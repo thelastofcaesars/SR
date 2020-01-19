@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Kontakt | Służby Ratownicze</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+          var includes = $('[data-include]');
+          jQuery.each(includes, function(){
+            var file = 'includes/' + $(this).data('include') + '.html';
+            $(this).load(file);
+          });
+        });
+    </script>
+
+</head>
+<body>
+    <div id="page-container">
+        
+        <header>
+            <div data-include="header"></div>
+            <div data-include="navbar"></div>
+        </header>
+        
+        <main id="content-wrap">
+            <ul style="padding: 0 0 4.5em 0;">
+                <li class="bg-set">
+                    <div class="content-el" data-include="form-send-email"></div>
+                </li>
+                <li class="bg-set">
+                    <div class="content-el" data-include="google-map"></div>
+                </li>
+            </ul>
+        </main>
+
+        <div data-include="footer"></div>
+
+    </div>
+</body>
+</html>

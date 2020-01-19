@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+/*
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+body {
+    background: #241c24;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* <---HEADER---> */
+
+header {
+    color: #241c24;   
+    width: 100%;
+    height: 50px;
+    top: 0;
+}
+
+#header-div {
+    height: 50px;
+}
+
+header img {
+    margin: 5px;
+    display: inline-block;
+    width: 40px;
+}
+
+header nav {
+    background: #241c24;
+}
+
+/* <---MAIN---> */
+
+main {
+    background: #241c24;
+    min-height: calc(8*53.6px + 70.4px);    /*all 8 pages height */
+    height: calc(100% - 50px - 6.5em);
+    top: 50px;
+    padding-top: 1em;
+    padding-bottom: 4.5em;
+}
+
+/* <---FOOTER---> */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4.5em;
+}
+
+/* <---CONTAINERS---> */
+
+figure {
+    text-align: center;
+    height: 30px;
+    margin: 10px auto;
+    display: inline-block;
+}
+
+figure figcaption {
+    vertical-align: middle;
+    background-color: #241c24;
+    color: #8AEC1B;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+ol li {
+    display: list-item;    
+    list-style-type: decimal;
+}
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: block;
+}
+
+/* LOOOK */
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    display: block;
+    padding: .5em 3em;
+    color: #8AEC1B;
+}
+
+/* <---HEADERS---> */
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* <---OTHER---> */
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    /*
+    font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+    transition: all 0.4s;
+    */
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+    color: #6675df;
+}
+
+p {
+    word-break: break-word;
+    /*
+    font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+    margin: 0px;
+    */
+}
+/* <---CLASSES---> */
+
+.input-size {
+    width: 80%;
+    max-width: 200px;
+    background: #241c24;
+    color: #fff;
+}
+
+.list-dec {
+    list-style-type: decimal;
+    padding: 0 10%;
+}
+
+.pad {
+    padding: 0 10%;
+}
+
+.p1 {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.p2 {
+    font-size: 1em;
+    margin: 4px 0;
+    color: #fff;
+}
+
+.p-footer {
+    position: relative;
+    background: yellow;
+    color: #000;
+    top: 50%;
+}
+
+.content-el {
+    padding: 1em 2em 3em 2em;
+    text-align: center;
+}
+
+.bg-set {
+    display: list-item;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* 100% auto */
+    background-color: #241c24;
+    width: 100%;
+    /*padding-top: 4em; */
+}
+/* <---TEXTS-MANIP---> */
+
+.txt-yellow{
+    color: yellow;
+}
+
+.upp {
+    text-transform: uppercase;
+}
+
+/* <---MEDIA---> */
+
+.video {
+    display: block;
+    min-width: 280px;
+    min-height: 157px;
+    margin: 0 auto;
+}
+
+.image {
+    max-width: 90%;
+    height: auto;
+}
+
+#gmap-outer {
+    position: relative;
+    left: 10%;
+    width: 80%;
+}
+
+#gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+}
+
+.gmap-size {
+    width: 100%;
+    height: 20vh;
+}
+
+/* <---REST---> */
+
+.active {
+    position: absolute;
+    display: block !important;
+    background: #241c24;
+    width: 100%;
+    top: 50px;
+    height: calc(100% - 50px);
+    left: 0;
+    bottom: 4.5em;
+}
+
+.cta {
+    display: block;
+    color: #fff;
+    background: #3055a6;
+    text-decoration: none;
+    padding: 8px 50px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 2em 0;
+}
+
+.agl1 {
+    position: relative;
+    padding: .2em;
+    margin: 0 2px;
+    top: 50%;
+    color: #8AEC1B;  
+}
+
+.agl2 {
+    position: relative;
+    padding: .2em;
+    margin: .1em 2px;
+    top: 50%;
+    color: #fff;  
+}
+
+/* <---DISABLES---> */
+
+.mobile-only {
+    display: block !important;
+}
+
+.navmenu-show-up {
+    display: none;
+}
+
+/* <---IDs---> */
+
+#page-container {
+    position: relative;
+    min-height: 100%;
+}
+
+#content-wrap {
+    padding-bottom: 4.5rem;    /* Footer height */
+}
+
+#nav-div-mobile {
+    display: block !important;
+    padding: .5em 3em;
+    left: 50%;
+    text-align: center;
+}
+
+#footer-div-mobile {
+    display: block !important;
+    padding: 0em 1em;
+    left: 50%;
+    text-align: center;
+}
+
+/* <---Inputs---> */
+
+#sendemail {
+    width: 100%;
+    display: inline-block;
+    background: #241c24;
+    text-align: center;
+}
+
+#message {
+    width: 90%;
+    max-width: 300px;
+}
+
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}
+
+@media only screen and (min-width: 820px) { /*768*/
+
+    body {
+        display: block;
+        grid-template-columns: auto;
+    }
+
+    /* <---HEADER---> */
+
+    header {
+        grid-template-columns: 20% auto;
+        padding: 0;
+        height: 128px;
+    }
+
+    #header-div {
+        height: 100px;
+    }
+
+    header img {
+        width: 80px;
+        margin: 10px;
+    }
+
+    header nav {
+        background: yellow;
+    }
+
+    /* <---MAIN---> */
+
+    main {
+        background: #241c24;
+        min-height: calc(100vh - 200px);
+        height: calc(100% - 200px);
+        top: 128px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    
+    /* <---FOOTER---> */
+    
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 4.5em;
+    }
+
+    #footer-div {
+        height: 1.5em;
+        background: yellow;
+    }
+
+    /* <---CONTAINERS---> */
+
+    figure {
+        height: 30px;
+        margin: 35px auto;
+    }
+    
+    figure figcaption {
+        color: yellow;
+    }
+
+    ol li {
+        display: list-item;
+        list-style-type: decimal;
+    }
+    
+    nav ul {
+        display: inline-block;
+        position: relative !important;
+        background: yellow !important;
+        width: 100% !important;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    nav ul li a {
+        font-size: .8em;
+        padding: .5em;
+        background-color: yellow;
+        color: rgb(63, 53, 53);
+    }
+
+    /* <---HEADERS---> */
+
+    h1 {
+        font-size: 3em;
+    }
+    
+    /* <---OTHER---> */
+
+
+    
+    /* <---CLASSES---> */
+
+    /* <---MEDIA---> */
+
+    .video {
+        display: block;
+        min-width: 560px;
+        min-height: 315px;
+        margin: 0 auto;
+    }
+
+    .image {
+        max-width: 90%;
+        height: auto;
+    }
+
+    #gmap-outer {
+        position: relative;
+        left: 20%;
+        width: 60%;
+    }
+
+    #gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+    }
+
+    .gmap-size {
+        width: 100%;
+        height: 35vh;
+    }
+
+    /* <---REST---> */
+
+    .list-dec {
+        list-style-type: decimal;
+        padding: 0 25%;
+    }
+
+    .pad {
+        padding: 0 25;
+    }
+
+    .p1 {
+        font-size: 1.5em;
+    }
+
+    .p2 {
+        font-size: 1em;
+    }
+    
+    .p-footer {
+        background: yellow; 
+        font-size: 1.5em; 
+        text-align: center; 
+        line-height: 1em;
+    }
+
+    .lb {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        white-space: nowrap;
+    }
+    
+    .cta {
+        display: inline-block;
+        font-size: 1.3em;
+        padding: .8em 3em;
+    }
+
+    .agl1 {
+        padding: .2em;
+        float: right;
+        color: inherit;  
+    }
+    .agl2 {
+        position: relative;
+        padding: .2em;
+        margin: 0 2px;
+        top: 50%;
+        color: #fff;  
+    }
+
+    /* <---DISABLES---> */
+
+    .mobile-only {
+        display: none !important;
+    }
+
+    .navmenu-show-up {
+        display: block !important;
+    }
+
+    /* <---IDs---> */
+
+    #content-wrap {
+        padding-top: 1em;
+        padding-bottom: 4.5em;    /* Footer height */
+    }
+
+    #nav-div-mobile {
+        display: inline !important;
+        padding: 0 !important;
+        left: 0%;
+        text-align: none;
+    }
+
+    #footer-div-mobile {
+        display: block !important;
+        padding: 0 1em;
+        left: 50%;
+        text-align: center;
+    }
+} 

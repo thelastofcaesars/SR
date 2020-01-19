@@ -1,0 +1,50 @@
+<div id="sendemail">
+    <div style="display: inline-block; width: 49%; text-align: center; vertical-align: top;">
+        <h1 style="color: yellow; padding-bottom: 1em;">Napisz do nas!</h1>
+        <p class="p2 pad">Wysyłając do nas wiadomość zgadzasz się na przetwarzanie podanych informacji przez nasze Stowarzyszenie.</p>
+        <p class="p2 pad">ul. Kolejowa 2 Oleśnica, Poland 56-400</p>
+        <p class="p2 pad">sr@sluzbyratownicze.pl</p>
+        <p class="p2 pad">+48 881 351 301</p>
+    </div>
+    <div style="display: inline-block; width: 49%; text-align: left;">
+
+        <!--<form id="fs-frm" accept-charset="utf-8" action="https://formspree.io/xvozyqga" method="post">-->
+        <form name="email-form" accept-charset="utf-8" action="https://formspree.io/xvozyqga" method="post">
+            <fieldset id="fs-frm-inputs" style="margin: 4px 0; width: 90%; max-width: 300px;">
+                <p>
+                    <!--<label for="full-name">Imię i Nazwisko</label> sr@sluzbyratownicze.pl action="mailto:cezaryjaniak01@gmail.com" method="post" -->
+                    <input class="input-size" type="text" name="name" id="full-name" placeholder="Imię i Nazwisko*" required="">
+                </p>
+                
+                <p>
+                    <!--<label for="email-adress">E-mail*:</label>-->
+                    <input class="input-size" type="email" name="_replyto" id="email-address" placeholder="jan@kowalski.pl" required="">
+                </p>
+                
+                <p>
+                    <!--<label for="telephone">Nr telefonu:</label>-->
+                    <input class="input-size" type="telephone" name="telephone" id="telephone" placeholder="555-555-555">
+                </p>
+                
+                <p>
+                    <!--<label for="adress">Adres:</label>-->
+                    <input class="input-size" type="text" name="adress" id="adress" placeholder="Pacanowo, ul. Iksińskiego 3/4">
+                </p>
+
+                <p>
+                    <!--<label for="email-subject">Temat:</label>-->
+                    <input class="input-size" type="text" id="email-subject" name="_subject" placeholder="Kurs...*">
+                </p>
+
+                <p>
+                    <!--<label for="message">Treść:</label>rows="5" -->
+                    <textarea style="background: #241c24; color: #fff;" rows="10" name="message" id="message" placeholder="Piszę w sprawie...*" required=""></textarea>
+                </p>
+            </fieldset>
+
+            <input type="submit" value="Wyślij">
+            <input type="reset" value="Reset">
+            
+        </form>
+    </div>
+</div>

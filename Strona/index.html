@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/util.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dom | Służby Ratownicze</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+          var includes = $('[data-include]');
+          jQuery.each(includes, function(){
+            var file = 'includes/' + $(this).data('include') + '.html';
+            $(this).load(file);
+          });
+        });
+      </script>
+
+</head>
+<body>
+    <div id="page-container">
+
+        <header>
+            <div data-include="header"></div>
+            <div data-include="navbar"></div>
+        </header>
+        
+        <main id="content-wrap">
+            <ul style="padding: 0 0 4.5em 0;">
+                <li class="bg-set" style="background-image: url('images/photos/world-in-the-fire.jpg');">
+                    <div class="content-el" style="text-align: left;">
+                        <h1 style="color: yellow;">Bądź Bezpieczny ze Służbami Ratowniczymi</h1>
+                        <p class="p2">Służby Ratownicze Oleśnica.</p>
+                        <p class="p2 upp">RATOWNICTWO, SZKOLENIA I KURSY Z PIERWSZEJ POMOCY, ZABEZPIECZENIA IMPREZ, TRANSPORT MEDYCZNY</p>
+                    </div>
+                </li>
+                <li class="bg-set">
+                    <div class="content-el">
+                        <iframe class="video" src="https://www.youtube.com/embed/DOF7arr1yxY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h2 class="upp" style="color: yellow;">KIM JESTEŚMY?</h2>
+                        <p class="p2 pad">Pomysł utworzenia naszej organizacji zrodził się w głowie kilku osób, w 2009 roku. Byli wśród nich Zbigniew Beczek i Mateusz Malec. Zgromadzili wokół siebie ludzi, którzy chcieli oddawać swój czas i zaangażowanie w pomoc innym, poprzez ratowanie życia i zdrowia. </p>
+                        <p class="p2 pad">W 2012 roku udało się zarejestrować Stowarzyszenie w Krajowym Rejestrze Sądowym w pod nazwą Służby Ratownicze.</p>
+                        <p class="p2 pad">Od tego roku datuje się stały rozwój organizacji. Początkowo działania polegały głównie na zabezpieczeniu festynów parafialnych, później doszły go tego rożnego rodzaju zabezpieczenia imprez sportowych i zbiorki charytatywne.</p>
+                    </div>
+                </li>
+                <li class="bg-set">
+                    <div class="content-el" data-include="form-send-email"></div>
+                </li>
+                <li class="bg-set">
+                    <div class="content-el" data-include="google-map"></div>
+                </li>
+            </ul>      
+        </main>
+
+        <div data-include="footer"></div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>O nas | Służby Ratownicze</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+          var includes = $('[data-include]');
+          jQuery.each(includes, function(){
+            var file = 'includes/' + $(this).data('include') + '.html';
+            $(this).load(file);
+          });
+        });
+    </script>
+
+</head>
+<body>
+    <div id="page-container">
+
+        <header>
+            <div data-include="header"></div>
+            <div data-include="navbar"></div>
+        </header>
+
+        <main id="content-wrap">
+            <ul style="padding: 0 0 4.5em 0;">
+                <li class="bg-set">
+                    <div class="content-el">
+                        <h1 style="color: yellow;">Nasza Historia</h1>
+                        <h2 style="color: #fff;">Praca na rzecz lepszego jutra</h2>
+                        
+                        <p class="p2 pad">Pomysł utworzenia naszej organizacji zrodził się w głowie kilku osób, w 2009 roku. Byli wśród nich Zbigniew Beczek i Mateusz Malec. Zgromadzili wokół siebie ludzi, którzy chcieli oddawać swój czas i zaangażowanie w pomoc innym, poprzez ratowanie życia i zdrowia.</p>
+                        <p class="p2 pad">W 2012 roku udało się zarejestrować Stowarzyszenie w Krajowym Rejestrze Sądowym w pod nazwą Służby Ratownicze.</p>
+                        <p class="p2 pad">Od tego roku datuje się stały rozwój organizacji. Początkowo działania polegały głównie na zabezpieczeniu festynów parafialnych, później doszły go tego rożnego rodzaju zabezpieczenia imprez sportowych i zbiorki charytatywne.</p>
+                        <p class="p2 pad">W lipcu 2013 udało się, dzięki współpracy z Tomaszem Krawczakiem z Liturgicznej Służby Ołtarza z Parafii NMP Matki Miłosierdzia, zorganizować I Obóz Ratowniczy w Karpaczu, gdzie poza wypoczynkiem uczyliśmy i pokazywaliśmy dzieciom i młodzieży czym jest pierwsza pomoc i jak ją stosować w życiu.</p>
+                        <p class="p2 pad">Nawiązaliśmy trwającą do dziś współpracę z Urzędem Miasta i Gminy Karpacz. Przygotowywaliśmy wspólnie z Policją, Strażą Miejską i lokalnymi OSP manewry i pokazy ratownicze podczas „Święta Ducha Gór”.</p>
+                        <p class="p2 pad">Druga połowa roku 2013-ego i pierwsza 2014-ego to czas intensywnych szkoleń, pracy nad planami na przyszłość, nawiązaniem współpracy z nowymi osobami, a także przygotowanie II Obozu Ratowniczego.</p>
+                        <p class="p2 pad">W dalszym czasie zabezpieczaliśmy imprezy, koncerty, organizowaliśmy zbiórki charytatywne darów na rzecz dzieci z biednych i potrzebujących rodzin.</p>
+                        <p class="p2 pad">26 września 2014 odbyło się walne zebranie wszystkich członków, na którym został powołany oddział w Częstochowie, podpisana została umowa o współpracy z oleśnickim oddziałem PCK oraz przedstawione zostały dotychczasowe osiągnięcia i plany na najbliższy rok. Od tego czasu datujemy największy rozwój naszej organizacji.</p>
+                        <p class="p2 pad">Działalność Stowarzyszenia oparta jest przede wszystkim o pracę społeczną członków.</p>
+                    </div>
+                </li>
+                <li class="bg-set">
+                    <div class="content-el" style="text-align: left;">
+                        <h2 style="color: yellow; text-align: center;">Celami działania Stowarzyszenia są:</h2>
+                        
+                        <ol class="list-dec">
+                            <li class="p2"><p>Ratownictwo i ochrona ludności;</p></li>
+                            <li class="p2"><p>Transport Sanitarny Osób;</p></li>
+                            <li class="p2"><p>Pomoc ofiarom katastrof, klęsk żywiołowych, konfliktów zbrojnych i wojen w kraju i za granicą;</p></li>
+                            <li class="p2"><p>Pomoc społeczna, w szczególności osobom i rodzinom znajdującym się w trudnej sytuacji życiowej oraz wyrównywanie szans tych osób i rodzin;</p></li>
+                            <li class="p2"><p>Działalność na rzecz edukacji, oświaty i wychowania oraz wypoczynku dzieci i młodzieży;</p></li>
+                            <li class="p2"><p>Organizacja i przeprowadzanie szkoleń w zakresie Pierwszej Pomocy Przedmedycznej;</p></li>
+                            <li class="p2"><p>Promocja zdrowia;</p></li>
+                            <li class="p2"><p>Przeciwdziałanie uzależnieniom i patologiom społecznym;</p></li>
+                            <li class="p2"><p>Działanie na rzecz porządku i bezpieczeństwa publicznego;</p></li>
+                            <li class="p2"><p>Działania na rzecz ekologii, ochrony zwierząt oraz dziedzictwa przyrodniczego;</p></li>
+                            <li class="p2"><p>Wspieranie, upowszechnianie sportu, turystyki, rekreacji i krajoznawstwa wśród mieszkańców;</p></li>
+                            <li class="p2"><p>Działalność charytatywna;</p></li>
+                            <li class="p2"><p>Promocja i organizacja wolontariatu;</p></li>
+                            <li class="p2"><p>Zabezpieczenie pod względem medycznym i porządku publicznego imprez masowych.</p></li>
+                        </ol>
+                    </div>
+                </li>
+            </ul>
+        </main>
+
+        <div data-include="footer"></div>
+
+    </div>
+</body>
+</html>
